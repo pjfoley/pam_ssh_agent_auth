@@ -1,5 +1,5 @@
 Source: pam-ssh-agent-auth
-Priority: extra
+Priority: optional
 Maintainer: Jamie Beverly <soupboy@sourceforge.net>
 Build-Depends: debhelper (>= 9), autotools-dev, libssl-dev, libpam0g-dev
 Standards-Version: 3.9.5
