@@ -56,7 +56,7 @@ Files: configure.ac
 Copyright: 1999-2004 Damien Miller
 License: ISC
 
-Files: compat.c CONTRIBITORS get_command_line.c get_command_line.h identity.h Makefile.in pam_ssh_agent_auth.pod pam_ssh_agent_auth.sudoers.conf pam_static_macros.h README
+Files: compat.c CONTRIBITORS dists/* get_command_line.c get_command_line.h identity.h Makefile.in pam_ssh_agent_auth.pod pam_ssh_agent_auth.sudoers.conf pam_static_macros.h README
 Copyright: Jamie Beverly
 License: BSD-3-clause
 Comment: These files don't have explicit license statements, but are covered by
@@ -69,7 +69,7 @@ Files: defines.h entropy.c entropy.h
 Copyright: 1999-2003 Damien Miller
 License: BSD-2-clause
 
-Files: dists/* openbsd-compat/*
+Files: openbsd-compat/*
 Comment: FIXME
 
 Files: install-sh
