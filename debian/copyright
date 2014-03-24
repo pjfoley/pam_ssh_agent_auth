@@ -33,9 +33,6 @@ Files: cleanup.c ssh-rsa.c
 Copyright: 2003 Markus Friedl <markus@openbsd.org>
 License: ISC
 
-Files: compat.c
-Comment: almost empty
-
 Files: compat.h fatal.c kex.h key.h secure_filename.c secure_filename.h ssh2.h ssh-dss.c uuencode.c uuencode.h 
 Copyright: 1999, 2000, 2001 Markus Friedl <markus@openbsd.org>
 License: BSD-2-clause
@@ -55,7 +52,7 @@ Files: configure.ac
 Copyright: 1999-2004 Damien Miller
 License: ISC
 
-Files: CONTRIBITORS get_command_line.c get_command_line.h identity.h Makefile.in pam_ssh_agent_auth.pod pam_ssh_Agent_auth.sudoers.conf pam_static_macros.h README
+Files: compat.c CONTRIBITORS get_command_line.c get_command_line.h identity.h Makefile.in pam_ssh_agent_auth.pod pam_ssh_Agent_auth.sudoers.conf pam_static_macros.h README
 Comment: plain project file
 
 Files: defines.h entropy.c entropy.h
