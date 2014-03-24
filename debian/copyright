@@ -1,3 +1,179 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: pam-ssh-agent-auth
+Upstream-Contact: Jamie Beverly
+Source: http://sourceforge.net/projects/pamsshagentauth/
+
+Files: aclocal.m4 LICENSE.OpenSSL OPENSSH_LICENSE
+Comment: plain copied from OpenSSH or OpenSSL
+
+Files: atomicio.c
+Copyright: 2006 Damien Miller, 2005 Anil Madhavapeddy, 1995, 1999 Theo de Raadt
+License: BSD-2-clause
+
+Files: atomicio.h
+Copyright: 2006 Damien Miller, 1995, 1999 Theo de Raadt
+License: BSD-2-clause
+
+Files: authfd.c key.c
+Copyright: 1995 Tatu Ylonen <ylo@cs.hut.fi>, Espoo, Finland,
+ 2000, 2001 Markus Friedl <markus@openbsd.org>,
+ Jamie Beverly
+License: BSD-2-clause, and tatuylonen
+
+Files: authfd.h buffer.c buffer.h includes.h log.h match.h misc.h pathnames.h rsa.h ssh.h uidswap.c uidswap.h xmalloc.c xmalloc.h
+Copyright: 1995 Tatu Ylonen <ylo@cs.hut.fi>, Espoo, Finland
+License: tatuylonen
+
+Files: bufaux.c bufaux.h cipher.h log.c
+Copyright: 1995 Tatu Ylonen <ylo@cs.hut.fi>, Espoo, Finland,
+ 2000 Markus Friedl <markus@openbsd.org>
+License: BSD-2-clause, and tatuylonen
+
+Files: cleanup.c ssh-rsa.c
+Copyright: 2003 Markus Friedl <markus@openbsd.org>
+License: ISC
+
+Files: compat.c
+Comment: almost empty
+
+Files: compat.h fatal.c kex.h key.h secure_filename.c secure_filename.h ssh2.h ssh-dss.c uuencode.c uuencode.h 
+Copyright: 1999, 2000, 2001 Markus Friedl <markus@openbsd.org>
+License: BSD-2-clause
+
+Files: config.guess config.sub
+Copyright: 1992-2012 Free Software Foundation, Inc.
+License: GPL-2+ with autoconf exception
+
+Files: config.h.in
+Comment: generated from configure.ac by autoheader
+
+Files: configure
+Copyright: 1992-2008 Free Software Foundation, Inc.
+License: unlimited
+
+Files: configure.ac
+Copyright: 1999-2004 Damien Miller
+License: ISC
+
+Files: CONTRIBITORS get_command_line.c get_command_line.h identity.h Makefile.in pam_ssh_agent_auth.pod pam_ssh_Agent_auth.sudoers.conf pam_static_macros.h README
+Comment: plain project file
+
+Files: defines.h entropy.c entropy.h
+Copyright: 1999-2003 Damien Miller
+License: BSD-2-clause
+
+Files: dists/* openbsd-compat/*
+Comment: FIXME
+
+Files: install-sh
+Copyright: 1999 Massachusetts Institute of Technology
+License: MIT
+
+Files: iterate_ssh_agent_keys.c iterate_ssh_agent_keys.h pam_ssh_agent_auth.c pam_user_authorized_keys.c pam_user_authorized_keys.h pam_user_key_allowed2.h userauth_pubkey_from_id.c userauth_pubkey_from_id.h
+Copyright: 2008 Jamie Beverly
+License: BSD-2-clause
+
+Files: misc.c
+Copyright: 2000 Markus Friedl, 2005, 2006 Damien Miller
+License: BSD-2-clause
+
+Files: mkinstalldirs
+Copyright: Noah Friedman <friedman@prep.ai.mit.edu>
+License: public-domain
+
+Files: pamuser_key_allowed2.c
+Copyright: 2000 Markus Friedl, 2008 Jamie Beverly
+License: BSD-2-clause
+
+Files: platform.h
+Copyright: 2006 Darren Tucker
+License: ISC
+
+License: tatuylonen
+ As far as I am concerned, the code I have written for this software
+ can be used freely for any purpose.  Any derived versions of this
+ software must be clearly marked as such, and if the derived work is
+ incompatible with the protocol description in the RFC file, it must be
+ called by a name other than "ssh" or "Secure Shell".
+
+License: BSD-2-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: ISC
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+License: GPL-2+ with autoconf exception
+ This file is free software; you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, see <http://www.gnu.org/licenses/>.
+ .
+ As a special exception to the GNU General Public License, if you
+ distribute this file as part of a program that contains a
+ configuration script generated by Autoconf, you may include it under
+ the same distribution terms that you use for the rest of that program.
+
+License: unlimited
+ This configure script is free software; the Free Software Foundation
+ gives unlimited permission to copy, distribute and modify it.
+
+License: MIT
+ Permission to use, copy, modify, distribute, and sell this software and its
+ documentation for any purpose is hereby granted without fee, provided that
+ the above copyright notice appear in all copies and that both that
+ copyright notice and this permission notice appear in supporting
+ documentation, and that the name of M.I.T. not be used in advertising or
+ publicity pertaining to distribution of the software without specific,
+ written prior permission.  M.I.T. makes no representations about the
+ suitability of this software for any purpose.  It is provided "as is"
+ without express or implied warranty.
+
+License: public-domain
+ No further explanation given.
+
+
+
+
+
+
+
+
 This package was debianized by Jamie Beverly <soupboy@sourceforge.net> on
 Wed, 13 Jan 2010 01:08:49 +0300.
 
