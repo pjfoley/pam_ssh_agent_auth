@@ -1,3 +1,9 @@
+pam-ssh-agent-auth (0.10.1~rc1-1) UNRELEASED; urgency=medium
+
+  * New upstream release candidate.
+
+ -- Christian M. Amsüss <chrysn@fsfe.org>  Mon, 24 Mar 2014 11:05:15 +0100
+
 pam-ssh-agent-auth (0.9.5-1) stable; urgency=low
 
   * Portability fixes for BSD/Mac 
