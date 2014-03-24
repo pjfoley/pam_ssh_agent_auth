@@ -45,9 +45,6 @@ Files: config.guess config.sub
 Copyright: 1992-2012 Free Software Foundation, Inc.
 License: GPL-2+ with autoconf exception
 
-Files: config.h.in
-Comment: generated from configure.ac by autoheader
-
 Files: configure
 Copyright: 1992-2008 Free Software Foundation, Inc.
 License: unlimited
@@ -56,7 +53,7 @@ Files: configure.ac
 Copyright: 1999-2004 Damien Miller
 License: ISC
 
-Files: compat.c CONTRIBITORS dists/* get_command_line.c get_command_line.h identity.h Makefile.in pam_ssh_agent_auth.pod pam_ssh_agent_auth.sudoers.conf pam_static_macros.h README
+Files: compat.c config.h.in CONTRIBITORS dists/* get_command_line.c get_command_line.h identity.h Makefile.in pam_ssh_agent_auth.pod pam_ssh_agent_auth.sudoers.conf pam_static_macros.h README
 Copyright: Jamie Beverly
 License: BSD-3-clause
 Comment: These files don't have explicit license statements, but are covered by
