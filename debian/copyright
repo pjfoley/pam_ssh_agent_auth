@@ -4,7 +4,11 @@ Upstream-Contact: Jamie Beverly
 Source: http://sourceforge.net/projects/pamsshagentauth/
 
 Files: aclocal.m4
-Comment: plain copied from OpenSSH or OpenSSL
+Copyright: 2005 Tim Rice
+License: BSD-2-clause
+Comment: This file seems to be copied from the OpenSSH project between 2005 and
+ 2011; it is implied in OPENSSH_LICENSE (6) that it is covered under
+ BSD-2-clause.
 
 Files: atomicio.c
 Copyright: 2006 Damien Miller, 2005 Anil Madhavapeddy, 1995, 1999 Theo de Raadt
@@ -52,8 +56,14 @@ Files: configure.ac
 Copyright: 1999-2004 Damien Miller
 License: ISC
 
-Files: compat.c CONTRIBITORS get_command_line.c get_command_line.h identity.h Makefile.in pam_ssh_agent_auth.pod pam_ssh_Agent_auth.sudoers.conf pam_static_macros.h README
-Comment: plain project file
+Files: compat.c CONTRIBITORS get_command_line.c get_command_line.h identity.h Makefile.in pam_ssh_agent_auth.pod pam_ssh_agent_auth.sudoers.conf pam_static_macros.h README
+Copyright: Jamie Beverly
+License: BSD-3-clause
+Comment: These files don't have explicit license statements, but are covered by
+ the project's license statement. Until this has been clarified better, the
+ statement is taken from upstream's debian/copyright file. (It is assumed that
+ 2-clause BSD license is meant by it, but it references the Debian common BSD
+ file, which is a 3-clause license).
 
 Files: defines.h entropy.c entropy.h
 Copyright: 1999-2003 Damien Miller
@@ -91,8 +101,8 @@ Comment:
  The file states that it is part of OpenSSH, and (in 6) that the remaining
  components are BSD-licensed.
  .
- It seems that this license is not referenced anywhere in the code, so
- the license text itself is the only file included under this license.
+ It seems that this license is not referenced anywhere in the code outside the
+ build process itself, so the license does not get shipped with the binaries.
 
 Files: pamuser_key_allowed2.c
 Copyright: 2000 Markus Friedl, 2008 Jamie Beverly
@@ -225,6 +235,24 @@ License: openssl
  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
  OF THE POSSIBILITY OF SUCH DAMAGE.
 
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted under the terms of the BSD License.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+ .
+ On Debian systems, the complete text of the BSD License can be
+ found in `/usr/share/common-licenses/BSD'.
 
 
 
