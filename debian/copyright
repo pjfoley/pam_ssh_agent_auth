@@ -69,9 +69,6 @@ Files: defines.h entropy.c entropy.h
 Copyright: 1999-2003 Damien Miller
 License: BSD-2-clause
 
-Files: openbsd-compat/*
-Comment: FIXME
-
 Files: install-sh
 Copyright: 1999 Massachusetts Institute of Technology
 License: MIT
@@ -93,6 +90,44 @@ License: BSD-2-clause
 Files: mkinstalldirs
 Copyright: Noah Friedman <friedman@prep.ai.mit.edu>
 License: public-domain
+
+Files: openbsd-compat/*
+Copyright: 1995 International Business Machines, Inc,
+ 1996-2001 Internet Software Consortium,
+ 1997-2005 Todd C. Miller <Todd.Miller@courtesan.com>,
+ 1988-2006 Damien Miller <djm@mindrot.org> / <djm@openbsd.org>,
+ 2003-2007 Darren Tucker,
+ 2002 Cray Inc. (Wendy Palm <wendyp@cray.com>),
+ 2000-2001, Corinna Vinschen <vinschen@cygnus.com>,
+ 2000-2003 Ben Lindstrom,
+ 1995 Tatu Ylonen <ylo@cs.hut.fi>, Espoo, Finland,
+ 1995-1998 Theo de Raadt,
+ 1995 Patrick Powell,
+ 1983-1994 The Regents of the University of California,
+ 1999 WIDE Project,
+ 2001 Jakob Schlyter,
+ 1993 Digital Equipment Corporation,
+ 2002-2005 Tim Rice,
+ 2001 Gert Doering,
+ 2000 Michael Stone,
+ 2000 Denis Parker,
+ 2005 Daniel Walsh <dwalsh@redhat.com>
+ 2006 Chad Mynhier,
+ 2005 The SCO Group,
+ 2003 Constantin S. Svintsoff <kostik@iclub.nsu.ru>,
+ 2004 Otto Moerbeek <otto@drijf.net>,
+ 1983-1997 Eric P. Allman,
+ 2000-2001 Aaron D. Gifford,
+ 1998-2000 Free Software Foundation, Inc.,
+ 2004 Ted Unangst,
+ 2002 Niels Provos <provos@citi.umich.edu>
+License: BSD-2-clause and BSD-3-clause and ISC and X11 and powell and tatuylonen
+Comment:
+ This directory is largely identical with what is found in openssh, with just
+ names changed to avoid collisions. This section credits the creators and
+ mentions the licenses in batch (assisted by the licensecheck utility), but if
+ you need more information, see the openssh package or the individual files'
+ copyright statements.
 
 Files: OPENSSH_LICENSE
 License: BSD-2-clause
@@ -254,6 +289,35 @@ License: BSD-3-clause
  On Debian systems, the complete text of the BSD License can be
  found in `/usr/share/common-licenses/BSD'.
 
+License: X11
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the
+ "Software"), to deal in the Software without restriction, including
+ without limitation the rights to use, copy, modify, merge, publish,
+ distribute, distribute with modifications, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included
+ in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ IN NO EVENT SHALL THE ABOVE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+ THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Except as contained in this notice, the name(s) of the above copyright
+ holders shall not be used in advertising or otherwise to promote the
+ sale, use or other dealings in this Software without prior written
+ authorization.
+
+License: powell
+ This code is based on code written by Patrick Powell (papowell@astart.com)
+ It may be used for any purpose as long as this notice remains intact
+ on all source code distributions
 
 
 Files: debian/*
