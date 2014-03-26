@@ -37,7 +37,7 @@ Files: cleanup.c ssh-rsa.c
 Copyright: 2003 Markus Friedl <markus@openbsd.org>
 License: ISC
 
-Files: compat.h fatal.c kex.h key.h secure_filename.c secure_filename.h ssh2.h ssh-dss.c uuencode.c uuencode.h 
+Files: compat.c compat.h fatal.c kex.h key.h identity.h secure_filename.c secure_filename.h ssh2.h ssh-dss.c uuencode.c uuencode.h 
 Copyright: 1999, 2000, 2001 Markus Friedl <markus@openbsd.org>
 License: BSD-2-clause
 
@@ -45,34 +45,41 @@ Files: config.guess config.sub
 Copyright: 1992-2012 Free Software Foundation, Inc.
 License: GPL-2+ with autoconf exception
 
+Files: config.h.in Makefile.in pamuser_key_allowed2.c
+Copyright: 2000 Markus Friedl, 2008-2014 Jamie Beverly
+License: BSD-2-clause
+
 Files: configure
-Copyright: 1992-2008 Free Software Foundation, Inc.
+Copyright: 1992-2012 Free Software Foundation, Inc.
 License: unlimited
 
 Files: configure.ac
 Copyright: 1999-2004 Damien Miller
 License: ISC
 
-Files: compat.c config.h.in CONTRIBITORS dists/* get_command_line.c get_command_line.h identity.h Makefile.in pam_ssh_agent_auth.pod pam_ssh_agent_auth.sudoers.conf pam_static_macros.h README
-Copyright: Jamie Beverly
-License: BSD-3-clause
+Files: CONTRIBITORS README
+Copyright: 2008 Jamie Beverly
+License: BSD-2-clause
 Comment: These files don't have explicit license statements, but are covered by
- the project's license statement. Until this has been clarified better, the
- statement is taken from upstream's debian/copyright file. (It is assumed that
- 2-clause BSD license is meant by it, but it references the Debian common BSD
- file, which is a 3-clause license).
+ the project's license statement. It can be found in upstream's
+ debian/copyright file.
 
 Files: defines.h entropy.c entropy.h
 Copyright: 1999-2003 Damien Miller
 License: BSD-2-clause
 
+Files: dist/*
+Copyright: 2010 Jamie Beverly
+License: BSD-2-clause
+Comment: This is declared in dist/LICENSE
+
+Files: get_command_line.c get_command_line.h iterate_ssh_agent_keys.c iterate_ssh_agent_keys.h pam_ssh_agent_auth.c pam_ssh_agent_auth.pod pam_ssh_agent_auth.sudoers.conf pam_static_macros.h pam_user_authorized_keys.c pam_user_authorized_keys.h pam_user_key_allowed2.h userauth_pubkey_from_id.c userauth_pubkey_from_id.h
+Copyright: 2008-2014 Jamie Beverly
+License: BSD-2-clause
+
 Files: install-sh
 Copyright: 1999 Massachusetts Institute of Technology
 License: MIT
-
-Files: iterate_ssh_agent_keys.c iterate_ssh_agent_keys.h pam_ssh_agent_auth.c pam_user_authorized_keys.c pam_user_authorized_keys.h pam_user_key_allowed2.h userauth_pubkey_from_id.c userauth_pubkey_from_id.h
-Copyright: 2008 Jamie Beverly
-License: BSD-2-clause
 
 Files: LICENSE.OpenSSL
 Copyright: 1998-2001 The OpenSSL Project
@@ -135,10 +142,6 @@ Comment:
  .
  It seems that this license is not referenced anywhere in the code outside the
  build process itself, so the license does not get shipped with the binaries.
-
-Files: pamuser_key_allowed2.c
-Copyright: 2000 Markus Friedl, 2008 Jamie Beverly
-License: BSD-2-clause
 
 Files: platform.h
 Copyright: 2006 Darren Tucker
