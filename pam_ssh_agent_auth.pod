@@ -14,7 +14,8 @@ This module provides authentication via ssh-agent.  If an ssh-agent listening at
  auth	sufficient	pam_ssh_agent_auth.so file=/etc/security/authorized_keys
 
 =item /etc/sudoers:
-
+ 
+In older versions of sudo (<= 1.7.12) it was necessary to set:
  Defaults    env_keep += "SSH_AUTH_SOCK"
 
 =back
