@@ -57,7 +57,7 @@ Files: configure.ac
 Copyright: 1999-2004 Damien Miller
 License: ISC
 
-Files: CONTRIBITORS README
+Files: CONTRIBUTORS README
 Copyright: 2008 Jamie Beverly
 License: BSD-2-clause
 Comment: These files don't have explicit license statements, but are covered by
