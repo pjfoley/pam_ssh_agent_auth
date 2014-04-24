@@ -1,8 +1,8 @@
-pam-ssh-agent-auth (0.10.1+svn101-1) UNRELEASED; urgency=medium
+pam-ssh-agent-auth (0.10.2-1) UNRELEASED; urgency=medium
 
-  * New upstream release (with some post-release fixes applied).
+  * New upstream release.
 
- -- Christian M. Amsüss <chrysn@fsfe.org>  Wed, 26 Mar 2014 13:21:32 +0100
+ -- Christian M. Amsüss <chrysn@fsfe.org>  Thu, 24 Apr 2014 15:25:53 +0200
 
 pam-ssh-agent-auth (0.9.5-1) stable; urgency=low
 
